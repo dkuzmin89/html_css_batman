@@ -1,0 +1,257 @@
+*, *:before. *:after {
+   box-sizing: border-box;
+}
+
+
+body {
+   background-color: #0A090A;
+   color: #ffffff;
+   font-family: 'Roboto', sans-serif;
+   background-image: url('../img/main-bg.jpg');
+   background-repeat: no-repeat;
+   background-position: top center;
+}
+
+.container {
+   /* max width */
+   max-width: 1140px;
+   /* aligning container */
+   margin: auto;
+}
+
+/* styles for header */
+
+.header {
+   display: flex;
+   /* aligning vertical/center */
+   align-items: center;
+   justify-content: space-between;
+   /*internal padding*/
+   padding-top: 45px;
+   margin-bottom: 30%;
+}
+
+.logo {
+   font-style: normal;
+   font-weight: 900;
+   font-size: 24px;
+   line-height: 28px;
+}
+
+.search {
+   display: flex;
+   align-items: center;
+   flex: 0.8;
+}
+
+.search-input {
+   flex: 1;
+   /* bg color of search-input */
+   background: rgba(196, 196, 196, 0.5);
+   border-radius: 5px;
+   /* internal paddings */
+   padding-top: 12px;
+   padding-bottom: 12px;
+   padding-left: 18px;
+   padding-right: 18px;
+   border: none;
+   color: #AEAEAE;
+   font-size: 14px;
+   line-height: 16px;
+}
+
+::-webkit-input-placeholder { /* Chrome */
+  color: #AEAEAE;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #AEAEAE;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #AEAEAE;
+  opacity: 1;
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: #AEAEAE;
+  opacity: 1;
+}
+
+.search-button {
+   background-color: transparent;
+   border: none;
+   padding: 10px 18px;
+}
+
+.bookmark {
+   background-color: transparent;
+   border: none;
+   cursor: pointer;
+}
+
+.user {
+   display: flex;
+   align-items: center;
+}
+
+.avatar {
+   margin-left: 20px;
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   /* constrain proportions */
+   object-fit: cover;
+}
+
+.title {
+   margin: 0;
+   font-family: 'Playfair Display', serif;
+   font-size: 48px;
+   line-height: 64px;
+   margin-bottom: 7px;
+}
+
+.title-small {
+   display: inline-block;
+   font-size: 20px;
+   line-height: 23px;
+   color: #787878;
+   margin-bottom: 38px;
+}
+
+.info {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 100px;
+}
+
+.movie-info {
+   display: flex;
+   align-items: center;
+
+}
+
+.tag {
+   display: inline-block;
+   padding: 5px 10px;
+   font-size: 16px;
+   line-height: 19px;
+   color: #333333;
+   background: #ffffff;
+   border-radius: 3px;
+   margin-right: 20px;
+}
+
+.county {
+   display: inline-block;
+   font-size: 16px;
+   line-height: 19px;
+   color: #FFFFFF;
+   margin-right: 33px;
+}
+
+.play {
+   display: flex;
+   align-items: center;
+   font-size: 16px;
+   line-height: 19px;
+   color: #FFFFFF;
+   text-decoration: none;
+}
+
+.play:before{
+   content: '';
+   width: 30px;
+   height: 30px;
+   background-image: url(../img/play.svg);
+   background-repeat: no-repeat;
+   background-size: 100%;
+   margin-right: 15px;
+}
+
+.more {
+   display: flex;
+   align-items: center;
+   font-size: 16px;
+   line-height: 19px;
+   color: #FFFFFF;
+   text-decoration: none;
+}
+
+.more:after {
+   content: '';
+   width: 30px;
+   height: 30px;
+   background-image: url(../img/play.svg);
+   background-repeat: no-repeat;
+   background-size: 100%;
+   margin-left: 15px;
+   transform: rotate(90deg);
+}
+
+.content {
+   display: flex;
+   justify-content: space-between;
+   background: #FFFFFF;
+   border-radius: 3px;
+   color: black;
+   padding: 43px 50px;
+}
+
+.poster {
+   display: block;
+   margin-top: -80px;
+   margin-bottom: 20px;
+}
+
+.button {
+   background: #FF8F27;
+   padding: 10px 42px;
+   font-size: 13px;
+   line-height: 16px;
+   color: #FFFFFF;
+   border: none;
+}
+
+.actors-title {
+   margin-bottom: 10px;
+   padding-left: 15px;
+   font-weight: 900;
+   font-size: 16px;
+   line-height: 150%;
+}
+
+.actors-list {
+   margin: 0;
+   list-style: none;
+   padding-left: 15px;
+   text-decoration: underline;
+}
+
+.full-info {
+   flex: 0.95;
+}
+
+.full-content {
+   display: flex;
+   justify-content: space-between;
+}
+
+.tabs-content {
+   margin-right: 70px;
+}
+
+.tabs-item {
+   color: black;
+   text-decoration: none;
+   margin-right: 40px;
+   font-size: 18px;
+   line-height: 21px;
+}
+
+.tabs-item-active {
+   color: #FF8F27;
+}
+
+.bookmark-added {
+   vertical-align: middle;
+}
